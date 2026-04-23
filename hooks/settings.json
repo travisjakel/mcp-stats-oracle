@@ -1,0 +1,36 @@
+{
+  "_comment": "Example Claude Code hooks for mcp-stats-oracle. Copy the `hooks` block into your project-level .claude/settings.json (merge with any existing hooks). Replace ABSOLUTE_PATH with the real path to this repo on your machine.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python ABSOLUTE_PATH/mcp-stats-oracle/hooks/session_start.py"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "mcp__stats-oracle__.*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python ABSOLUTE_PATH/mcp-stats-oracle/hooks/pre_tool_use.py"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python ABSOLUTE_PATH/mcp-stats-oracle/hooks/stop.py"
+          }
+        ]
+      }
+    ]
+  }
+}

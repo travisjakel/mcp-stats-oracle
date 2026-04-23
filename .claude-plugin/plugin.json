@@ -1,0 +1,9 @@
+{
+  "name": "mcp-stats-oracle",
+  "version": "0.2.0",
+  "description": "8 statistical analysis tools Claude can use directly — catch22 features, Bayesian changepoint detection, MRCD outlier flagging, Money Flow Index, TSrepr compression, Bayesian nowcasting, ASCII ggplot rendering, and a describe helper. Backed by a persistent R Plumber worker with auto-lifecycle hooks.",
+  "author": { "name": "Travis Jakel", "email": "travisjakel@gmail.com" },
+  "license": "MIT",
+  "keywords": ["mcp", "r", "statistics", "time-series", "changepoint", "robust-regression", "ggplot", "plumber"],
+  "homepage": "https://github.com/travisjakel/mcp-stats-oracle"
+}
