@@ -12,7 +12,7 @@
   "plugins": [
     {
       "name": "mcp-stats-oracle",
-      "source": ".",
+      "source": "./",
       "description": "8 statistical analysis tools Claude can call directly: catch22 time-series features, Bayesian changepoint detection, MRCD robust-regression outlier flagging, Money Flow Index, TSrepr cyclical compression, Bayesian nowcasting, ASCII ggplot rendering via plotcli, and a describe_data helper. Includes auto-lifecycle hooks that manage the R Plumber worker for you.",
       "version": "0.2.0",
       "author": { "name": "Travis Jakel" },
