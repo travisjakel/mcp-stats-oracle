@@ -3,6 +3,16 @@
 All notable changes to mcp-stats-oracle are documented here. Follows
 [Semantic Versioning](https://semver.org/).
 
+## [0.2.1] — 2026-04-27
+
+### Fixed
+- `FastMCP()` constructor kwarg renamed from `description=` to `instructions=`
+  to match the current `mcp` Python SDK. The plugin failed to load on installs
+  with newer SDK versions (`TypeError: FastMCP.__init__() got an unexpected
+  keyword argument 'description'`).
+- `pyproject.toml` version field bumped from `0.1.0` (stale) to track plugin
+  manifest versioning.
+
 ## [0.2.0] — 2026-04-21
 
 ### Added

@@ -49,7 +49,7 @@ STRICT_MAX = 10000
 
 mcp = FastMCP(
     "stats-oracle",
-    description="Time series & robust regression tools backed by a persistent R worker."
+    instructions="Time series & robust regression tools backed by a persistent R worker."
 )
 bridge = RBridge()
 

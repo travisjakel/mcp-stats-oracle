@@ -1,6 +1,6 @@
 [project]
 name = "mcp-stats-oracle"
-version = "0.1.0"
+version = "0.2.1"
 description = "MCP server exposing production R statistical tools (catch22, MRCD, changepoint, MFI, TSrepr, Bayesian nowcast) to Claude via a persistent R Plumber worker."
 readme = "README.md"
 requires-python = ">=3.10"
