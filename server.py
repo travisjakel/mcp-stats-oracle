@@ -33,7 +33,7 @@ from __future__ import annotations
 
 from typing import Any, Literal
 
-from mcp.server.fastmcp import FastMCP
+from mcp.server.mcpserver import MCPServer
 from pydantic import BaseModel, Field, field_validator
 
 from r_bridge import (
@@ -47,7 +47,7 @@ from r_bridge import (
 SAFE_DOWNSAMPLE_MAX = 5000
 STRICT_MAX = 10000
 
-mcp = FastMCP(
+mcp = MCPServer(
     "stats-oracle",
     instructions="Time series & robust regression tools backed by a persistent R worker."
 )

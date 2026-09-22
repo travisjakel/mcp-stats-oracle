@@ -55,7 +55,7 @@ wrap <- function(expr) {
 #* Health check
 #* @get /health
 #* @serializer unboxedJSON
-function() list(status = "ok", tools = 8L, version = "0.2.0")
+function() list(status = "ok", tools = 8L, version = "0.2.2")
 
 #* Describe a numeric series
 #* @post /describe

@@ -3,6 +3,16 @@
 All notable changes to mcp-stats-oracle are documented here. Follows
 [Semantic Versioning](https://semver.org/).
 
+## [0.2.2] — 2026-09-22
+
+### Fixed
+- The server could not start on the `mcp` Python SDK 2.x: `mcp.server.fastmcp`
+  was removed in 2.0 and the plugin failed with `ModuleNotFoundError` at import.
+  Now built on `mcp.server.mcpserver.MCPServer`, and the dependency is pinned
+  `mcp>=2,<3` so the next SDK major cannot break it silently again.
+- `/health` reported a stale `0.2.0`; the Plumber worker now reports the
+  plugin version.
+
 ## [0.2.1] — 2026-04-27
 
 ### Fixed
